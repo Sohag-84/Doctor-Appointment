@@ -27,6 +27,8 @@ class AppStrings {
       liver = "Liver",
       lungs = "Lungs",
       heart = "Heart",
-      kidney = "Kidney";
+      kidney = "Kidney",
+      category = "Category",
+      doctor = "Doctor Login",
+      settings = "Settings";
 }
-

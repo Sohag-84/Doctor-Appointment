@@ -1,4 +1,7 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:doctor_appointment/consts/consts.dart';
+import 'package:doctor_appointment/views/category/category_screen.dart';
 import 'package:doctor_appointment/views/home/home_screen.dart';
 
 class Home extends StatefulWidget {
@@ -13,9 +16,7 @@ class _HomeState extends State<Home> {
 
   List screenList = [
     HomeScreen(),
-    Container(
-      color: Colors.red,
-    ),
+    CategoryScreen(),
     Container(
       color: Colors.orange,
     ),
