@@ -50,7 +50,7 @@ class SignUPScreen extends StatelessWidget {
                         8.widthBox,
                         InkWell(
                           onTap: () => Get.back(),
-                          child: AppStrings.login.text.make(),
+                          child: AppStyles.bold(title: AppStrings.login),
                         ),
                       ],
                     ),

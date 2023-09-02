@@ -4,6 +4,7 @@ import 'package:doctor_appointment/consts/consts.dart';
 import 'package:doctor_appointment/consts/fonts.dart';
 import 'package:doctor_appointment/resources/components/custom_button.dart';
 import 'package:doctor_appointment/resources/components/custom_textfield.dart';
+import 'package:doctor_appointment/views/home/home.dart';
 import 'package:doctor_appointment/views/sign_up/signup_screen.dart';
 import 'package:get/get.dart';
 
@@ -43,7 +44,9 @@ class LoginScreen extends StatelessWidget {
                     ),
                     20.heightBox,
                     CustomButton(
-                      onTap: () {},
+                      onTap: () {
+                        Get.to(() => Home());
+                      },
                       buttonText: AppStrings.login,
                     ),
                     20.heightBox,
@@ -54,7 +57,7 @@ class LoginScreen extends StatelessWidget {
                         8.widthBox,
                         InkWell(
                           onTap: () => Get.to(() => SignUPScreen()),
-                          child: AppStrings.signup.text.make(),
+                          child: AppStyles.bold(title: AppStrings.signup),
                         ),
                       ],
                     ),

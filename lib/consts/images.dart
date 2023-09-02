@@ -8,5 +8,8 @@ class AppAssets {
       icLungs = "assets/icons/lungs.png",
       icStomach = "assets/icons/lungs.png",
       icTooth = "assets/icons/tooth.png",
-      icLogin = "assets/images/doctor.jpg";
+      icLogin = "assets/images/doctor.jpg",
+
+      //image
+      imgDoctor = "assets/images/doctor.png";
 }
