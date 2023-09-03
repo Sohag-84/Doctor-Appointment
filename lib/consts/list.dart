@@ -18,3 +18,15 @@ List<String> iconsTitleList = [
   AppStrings.heart,
   AppStrings.kidney,
 ];
+
+List<String> settingsList = [
+  AppStrings.changePassword,
+  AppStrings.termsConditions,
+  AppStrings.signout,
+];
+
+List settingsListIcon = [
+  Icons.lock,
+  Icons.note,
+  Icons.logout,
+];

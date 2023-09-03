@@ -17,6 +17,7 @@ class CategoryScreen extends StatelessWidget {
         title: AppStyles.bold(
           title: AppStrings.category,
           size: AppSizes.size18,
+          color: AppColors.whiteColor,
         ),
       ),
       body: Padding(

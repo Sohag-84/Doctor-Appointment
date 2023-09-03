@@ -30,5 +30,8 @@ class AppStrings {
       kidney = "Kidney",
       category = "Category",
       doctor = "Doctor Login",
-      settings = "Settings";
+      settings = "Settings",
+      changePassword = "Change Password",
+      termsConditions = "Terms & Conditions",
+      signout = "Signout";
 }

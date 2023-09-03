@@ -3,6 +3,8 @@
 import 'package:doctor_appointment/consts/consts.dart';
 import 'package:doctor_appointment/views/category/category_screen.dart';
 import 'package:doctor_appointment/views/home/home_screen.dart';
+import 'package:doctor_appointment/views/login/login_screen.dart';
+import 'package:doctor_appointment/views/settings/settings_screen.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -17,12 +19,8 @@ class _HomeState extends State<Home> {
   List screenList = [
     HomeScreen(),
     CategoryScreen(),
-    Container(
-      color: Colors.orange,
-    ),
-    Container(
-      color: Colors.blue,
-    ),
+    LoginScreen(),
+    SettingsScreen(),
   ];
   @override
   Widget build(BuildContext context) {
@@ -55,7 +53,7 @@ class _HomeState extends State<Home> {
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.person),
-            label: "Person",
+            label: "Doctor",
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.settings),

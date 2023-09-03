@@ -18,6 +18,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       appBar: AppBar(
         elevation: 0,
+        automaticallyImplyLeading: false,
         title: AppStyles.bold(
           title: "${AppStrings.welcome} User",
           color: AppColors.whiteColor,
