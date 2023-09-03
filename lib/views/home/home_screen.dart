@@ -4,6 +4,8 @@ import 'package:doctor_appointment/consts/consts.dart';
 import 'package:doctor_appointment/consts/fonts.dart';
 import 'package:doctor_appointment/consts/list.dart';
 import 'package:doctor_appointment/resources/components/custom_textfield.dart';
+import 'package:doctor_appointment/views/doctor%20profile/doctor_profile_screen.dart';
+import 'package:get/get.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -120,14 +122,19 @@ class _HomeScreenState extends State<HomeScreen> {
                           margin: EdgeInsets.only(right: 8),
                           child: Column(
                             children: [
-                              Container(
-                                alignment: Alignment.center,
-                                width: 150,
-                                color: AppColors.blueColor,
-                                child: Image.asset(
-                                  AppAssets.imgDoctor,
-                                  width: 100,
-                                  fit: BoxFit.cover,
+                              InkWell(
+                                onTap: () {
+                                  Get.to(() => DoctorProfileScreen());
+                                },
+                                child: Container(
+                                  alignment: Alignment.center,
+                                  width: 150,
+                                  color: AppColors.blueColor,
+                                  child: Image.asset(
+                                    AppAssets.imgDoctor,
+                                    width: 100,
+                                    fit: BoxFit.cover,
+                                  ),
                                 ),
                               ),
                               5.heightBox,
