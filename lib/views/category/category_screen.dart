@@ -2,6 +2,8 @@
 
 import 'package:doctor_appointment/consts/fonts.dart';
 import 'package:doctor_appointment/consts/list.dart';
+import 'package:doctor_appointment/views/category_details/category_details_screen.dart';
+import 'package:get/get.dart';
 
 import '../../consts/consts.dart';
 
@@ -33,7 +35,7 @@ class CategoryScreen extends StatelessWidget {
           ),
           itemBuilder: (context, index) {
             return InkWell(
-              onTap: () {},
+              onTap: () => Get.to(() => CategoryDetailsScreen()),
               child: Container(
                 padding: EdgeInsets.all(10),
                 decoration: BoxDecoration(

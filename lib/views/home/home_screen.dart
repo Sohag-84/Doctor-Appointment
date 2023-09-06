@@ -111,22 +111,22 @@ class _HomeScreenState extends State<HomeScreen> {
                       physics: BouncingScrollPhysics(),
                       itemCount: 3,
                       itemBuilder: (context, index) {
-                        return Container(
-                          height: 100,
-                          width: 150,
-                          clipBehavior: Clip.hardEdge,
-                          decoration: BoxDecoration(
-                            color: AppColors.bgDarkColor,
-                            borderRadius: BorderRadius.circular(12),
-                          ),
-                          margin: EdgeInsets.only(right: 8),
-                          child: Column(
-                            children: [
-                              InkWell(
-                                onTap: () {
-                                  Get.to(() => DoctorProfileScreen());
-                                },
-                                child: Container(
+                        return InkWell(
+                          onTap: () {
+                            Get.to(() => DoctorProfileScreen());
+                          },
+                          child: Container(
+                            height: 100,
+                            width: 150,
+                            clipBehavior: Clip.hardEdge,
+                            decoration: BoxDecoration(
+                              color: AppColors.bgDarkColor,
+                              borderRadius: BorderRadius.circular(12),
+                            ),
+                            margin: EdgeInsets.only(right: 8),
+                            child: Column(
+                              children: [
+                                Container(
                                   alignment: Alignment.center,
                                   width: 150,
                                   color: AppColors.blueColor,
@@ -136,15 +136,15 @@ class _HomeScreenState extends State<HomeScreen> {
                                     fit: BoxFit.cover,
                                   ),
                                 ),
-                              ),
-                              5.heightBox,
-                              AppStyles.normal(title: "Doctor name"),
-                              5.heightBox,
-                              AppStyles.normal(
-                                title: "Category name",
-                                color: Colors.black54,
-                              ),
-                            ],
+                                5.heightBox,
+                                AppStyles.normal(title: "Doctor name"),
+                                5.heightBox,
+                                AppStyles.normal(
+                                  title: "Category name",
+                                  color: Colors.black54,
+                                ),
+                              ],
+                            ),
                           ),
                         );
                       },
