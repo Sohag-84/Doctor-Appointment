@@ -1,5 +1,9 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:doctor_appointment/consts/consts.dart';
 import 'package:doctor_appointment/consts/fonts.dart';
+import 'package:doctor_appointment/views/appointment_details/appointment_details_screen.dart';
+import 'package:get/get.dart';
 
 class AppointmentScreen extends StatelessWidget {
   const AppointmentScreen({super.key});
@@ -19,6 +23,7 @@ class AppointmentScreen extends StatelessWidget {
         itemCount: 18,
         itemBuilder: (context, index) {
           return ListTile(
+            onTap: () => Get.to(() => AppointmentDetailsScreen()),
             leading: CircleAvatar(
               child: Image.asset(AppAssets.imgDoctor),
             ),
