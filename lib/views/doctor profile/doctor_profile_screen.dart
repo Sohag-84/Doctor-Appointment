@@ -3,7 +3,7 @@
 import 'package:doctor_appointment/consts/consts.dart';
 import 'package:doctor_appointment/consts/fonts.dart';
 import 'package:doctor_appointment/resources/components/custom_button.dart';
-import 'package:doctor_appointment/views/appointment/appointment_screen.dart';
+import 'package:doctor_appointment/views/book_appointment/book_appointment_screen.dart';
 import 'package:get/get.dart';
 
 class DoctorProfileScreen extends StatelessWidget {
@@ -177,7 +177,7 @@ class DoctorProfileScreen extends StatelessWidget {
       bottomNavigationBar: Padding(
         padding: const EdgeInsets.all(10.0),
         child: CustomButton(
-          onTap: () => Get.to(() => AppointmentScreen()),
+          onTap: () => Get.to(() => BookAppointmentScreen()),
           buttonText: "Book an appointment",
         ),
       ),

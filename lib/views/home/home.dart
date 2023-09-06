@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:doctor_appointment/consts/consts.dart';
+import 'package:doctor_appointment/views/appointment/appointment_screen.dart';
 import 'package:doctor_appointment/views/category/category_screen.dart';
 import 'package:doctor_appointment/views/home/home_screen.dart';
 import 'package:doctor_appointment/views/login/login_screen.dart';
@@ -18,6 +19,7 @@ class _HomeState extends State<Home> {
 
   List screenList = [
     HomeScreen(),
+    AppointmentScreen(),
     CategoryScreen(),
     LoginScreen(),
     SettingsScreen(),
@@ -46,6 +48,10 @@ class _HomeState extends State<Home> {
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
             label: "Home",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.event_note),
+            label: "Appointments",
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.category),
